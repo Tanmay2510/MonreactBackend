@@ -31,7 +31,7 @@ mongoose.connect(process.env.DB_URI,{ useNewUrlParser:true,useUnifiedTopology:tr
 // }
 
 app.get("/", (req,res)=>{
-    res.json("This is working");
+    res.send("This is working");
 })
 
 app.route("/getusers/:getid")
